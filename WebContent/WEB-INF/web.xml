@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>FridayTrip</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>com.main.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/Trip/Index.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>TMeberLogout</servlet-name>
+		<servlet-class>com.main.TMemberLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TMeberLogout</servlet-name>
+		<url-pattern>/Trip/TMemberLogout.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>tMemberWriteOk</servlet-name>
+		<servlet-class>com.main.tMemberWriteOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>tMemberWriteOk</servlet-name>
+		<url-pattern>/Trip/tMemberWriteOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>personTestWriteOk</servlet-name>
+		<servlet-class>com.main.personTestWriteOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>personTestWriteOk</servlet-name>
+		<url-pattern>/Trip/personTestWriteOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 여행메뉴 시작 -->
+	<servlet>
+		<servlet-name>Trip</servlet-name>
+		<servlet-class>com.trip.Trip</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Trip</servlet-name>
+		<url-pattern>/Trip/Trip.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Bike</servlet-name>
+		<servlet-class>com.trip.Bike</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Bike</servlet-name>
+		<url-pattern>/Trip/Bike.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mt</servlet-name>
+		<servlet-class>com.trip.Mt</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mt</servlet-name>
+		<url-pattern>/Trip/Mt.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Food</servlet-name>
+		<servlet-class>com.trip.Food</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Food</servlet-name>
+		<url-pattern>/Trip/Food.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LocalTrip</servlet-name>
+		<servlet-class>com.trip.LocalTrip</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LocalTrip</servlet-name>
+		<url-pattern>/Trip/LocalTrip.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Fish</servlet-name>
+		<servlet-class>com.trip.Fish</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Fish</servlet-name>
+		<url-pattern>/Trip/Fish.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Detail</servlet-name>
+		<servlet-class>com.trip.Detail</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Detail</servlet-name>
+		<url-pattern>/Trip/Detail.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Map</servlet-name>
+		<servlet-class>com.map.Map</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Map</servlet-name>
+		<url-pattern>/Trip/Map.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>QA</servlet-name>
+		<servlet-class>com.qa.QA</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QA</servlet-name>
+		<url-pattern>/Trip/QA.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>QA2</servlet-name>
+		<servlet-class>com.qa.QA2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QA2</servlet-name>
+		<url-pattern>/Trip/QA2.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Coin</servlet-name>
+		<servlet-class>com.Coin.Coin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Coin</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/Coin.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Coinre</servlet-name>
+		<servlet-class>com.Coin.Coinre</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Coinre</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/Coinre.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CoinAdd</servlet-name>
+		<servlet-class>com.Coin.CoinAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CoinAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/CoinAdd.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CoinAddOk</servlet-name>
+		<servlet-class>com.Coin.CoinAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CoinAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/CoinAddOk.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>CoinAdding</servlet-name>
+		<servlet-class>com.Coin.CoinAdding</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CoinAdding</servlet-name>
+		<url-pattern>/Trip/CoinAdding.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Select</servlet-name>
+		<servlet-class>com.Coin.Select</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Select</servlet-name>
+		<url-pattern>/Trip/Select.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Pay</servlet-name>
+		<servlet-class>com.trip.Pay</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Pay</servlet-name>
+		<url-pattern>/Trip/Pay.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PayOk</servlet-name>
+		<servlet-class>com.trip.PayOk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PayOk</servlet-name>
+		<url-pattern>/Trip/PayOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Full</servlet-name>
+		<servlet-class>com.trip.Full</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Full</servlet-name>
+		<url-pattern>/Trip/Full.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Already</servlet-name>
+		<servlet-class>com.trip.Already</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Already</servlet-name>
+		<url-pattern>/Trip/Already.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Caution</servlet-name>
+		<servlet-class>com.trip.Caution</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Caution</servlet-name>
+		<url-pattern>/Trip/Caution.do</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>Refund</servlet-name>
+		<servlet-class>com.main.Refund</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Refund</servlet-name>
+		<url-pattern>/Trip/Refund.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- 여행메뉴 끝 -->
+
+
+
+
+	<!-- FreeList -->
+	<servlet>
+		<servlet-name>FreeList</servlet-name>
+		<servlet-class>com.Free.FreeList</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeList</servlet-name>
+		<url-pattern>/Trip/FreeList.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeWrite -->
+	<servlet>
+		<servlet-name>FreeWrite</servlet-name>
+		<servlet-class>com.Free.FreeWrite</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeWrite</servlet-name>
+		<url-pattern>/Trip/FreeWrite.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeView -->
+	<servlet>
+		<servlet-name>FreeView</servlet-name>
+		<servlet-class>com.Free.FreeView</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeView</servlet-name>
+		<url-pattern>/Trip/FreeView.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeEdit -->
+	<servlet>
+		<servlet-name>FreeEdit</servlet-name>
+		<servlet-class>com.Free.FreeEdit</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeEdit</servlet-name>
+		<url-pattern>/Trip/FreeEdit.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeEditOk -->
+	<servlet>
+		<servlet-name>FreeEditOk</servlet-name>
+		<servlet-class>com.Free.FreeEditOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeEditOk</servlet-name>
+		<url-pattern>/Trip/FreeEditOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeDel -->
+	<servlet>
+		<servlet-name>FreeDel</servlet-name>
+		<servlet-class>com.Free.FreeDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeDel</servlet-name>
+		<url-pattern>/Trip/FreeDel.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeDelOk -->
+	<servlet>
+		<servlet-name>FreeDelOk</servlet-name>
+		<servlet-class>com.Free.FreeDelOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeDelOk</servlet-name>
+		<url-pattern>/Trip/FreeDelOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeWriteOk -->
+	<servlet>
+		<servlet-name>FreeWriteOk</servlet-name>
+		<servlet-class>com.Free.FreeWriteOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeWriteOk</servlet-name>
+		<url-pattern>/Trip/FreeWriteOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeCheck -->
+	<servlet>
+		<servlet-name>FreeCheck</servlet-name>
+		<servlet-class>com.Free.FreeCheck</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeCheck</servlet-name>
+		<url-pattern>/Trip/FreeCheck.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeCheckOk -->
+	<servlet>
+		<servlet-name>FreeCheckOk</servlet-name>
+		<servlet-class>com.Free.FreeCheckOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeCheckOk</servlet-name>
+		<url-pattern>/Trip/FreeCheckOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeCommentOk -->
+	<servlet>
+		<servlet-name>FreeCommentOk</servlet-name>
+		<servlet-class>com.Free.FreeCommentOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeCommentOk</servlet-name>
+		<url-pattern>/Trip/FreeCommentOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- FreeCommentDel -->
+	<servlet>
+		<servlet-name>FreeCommentDel</servlet-name>
+		<servlet-class>com.Free.FreeCommentDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FreeCommentDel</servlet-name>
+		<url-pattern>/Trip/FreeCommentDel.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndList -->
+	<servlet>
+		<servlet-name>EndList</servlet-name>
+		<servlet-class>com.End.EndList</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndList</servlet-name>
+		<url-pattern>/Trip/EndList.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndWrite -->
+	<servlet>
+		<servlet-name>EndWrite</servlet-name>
+		<servlet-class>com.End.EndWrite</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndWrite</servlet-name>
+		<url-pattern>/Trip/EndWrite.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndView -->
+	<servlet>
+		<servlet-name>EndView</servlet-name>
+		<servlet-class>com.End.EndView</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndView</servlet-name>
+		<url-pattern>/Trip/EndView.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndEdit -->
+	<servlet>
+		<servlet-name>EndEdit</servlet-name>
+		<servlet-class>com.End.EndEdit</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndEdit</servlet-name>
+		<url-pattern>/Trip/EndEdit.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndEditOk -->
+	<servlet>
+		<servlet-name>EndEditOk</servlet-name>
+		<servlet-class>com.End.EndEditOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndEditOk</servlet-name>
+		<url-pattern>/Trip/EndEditOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndDel -->
+	<servlet>
+		<servlet-name>EndDel</servlet-name>
+		<servlet-class>com.End.EndDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndDel</servlet-name>
+		<url-pattern>/Trip/EndDel.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndDelOk -->
+	<servlet>
+		<servlet-name>EndDelOk</servlet-name>
+		<servlet-class>com.End.EndDelOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndDelOk</servlet-name>
+		<url-pattern>/Trip/EndDelOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndWriteOk -->
+	<servlet>
+		<servlet-name>EndWriteOk</servlet-name>
+		<servlet-class>com.End.EndWriteOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndWriteOk</servlet-name>
+		<url-pattern>/Trip/EndWriteOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndCheck -->
+	<servlet>
+		<servlet-name>EndCheck</servlet-name>
+		<servlet-class>com.End.EndCheck</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndCheck</servlet-name>
+		<url-pattern>/Trip/EndCheck.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndCheckOk -->
+	<servlet>
+		<servlet-name>EndCheckOk</servlet-name>
+		<servlet-class>com.End.EndCheckOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndCheckOk</servlet-name>
+		<url-pattern>/Trip/EndCheckOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndCommentOk -->
+	<servlet>
+		<servlet-name>EndCommentOk</servlet-name>
+		<servlet-class>com.End.EndCommentOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndCommentOk</servlet-name>
+		<url-pattern>/Trip/EndCommentOk.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- EndCommentDel -->
+	<servlet>
+		<servlet-name>EndCommentDel</servlet-name>
+		<servlet-class>com.End.EndCommentDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EndCommentDel</servlet-name>
+		<url-pattern>/Trip/EndCommentDel.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 예빈 -->
+	<servlet>
+		<servlet-name>TripAdd</servlet-name>
+		<servlet-class>com.Admin.TripAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TripAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/TripAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceAdd</servlet-name>
+		<servlet-class>com.Admin.PlaceAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceAdd.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PlaceAddOk</servlet-name>
+		<servlet-class>com.Admin.PlaceAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceFoodAdd</servlet-name>
+		<servlet-class>com.Admin.PlaceFoodAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceFoodAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceFoodAdd.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PlaceFoodAddOk</servlet-name>
+		<servlet-class>com.Admin.PlaceFoodAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceFoodAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceFoodAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TripBicycleAdd</servlet-name>
+		<servlet-class>com.Admin.TripBicycleAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TripBicycleAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/TripBicycleAdd.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>TripBicycleAddOk</servlet-name>
+		<servlet-class>com.Admin.TripBicycleAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TripBicycleAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/TripBicycleAddOk.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Member</servlet-name>
+		<servlet-class>com.Admin.Member</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Member</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/Member.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MemberDel</servlet-name>
+		<servlet-class>com.Admin.MemberDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberDel</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/MemberDel.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MemberModify</servlet-name>
+		<servlet-class>com.Admin.MemberModify</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberModify</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/MemberModify.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>MemberModifyOk</servlet-name>
+		<servlet-class>com.Admin.MemberModifyOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberModifyOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/MemberModifyOk.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>FoodAdd</servlet-name>
+		<servlet-class>com.Admin.FoodAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FoodAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/FoodAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FoodAddOk</servlet-name>
+		<servlet-class>com.Admin.FoodAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FoodAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/FoodAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LocalAdd</servlet-name>
+		<servlet-class>com.Admin.LocalAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LocalAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/LocalAdd.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LocalAddOk</servlet-name>
+		<servlet-class>com.Admin.LocalAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LocalAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/LocalAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceLocalAdd</servlet-name>
+		<servlet-class>com.Admin.PlaceLocalAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceLocalAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceLocalAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceLocalAddOk</servlet-name>
+		<servlet-class>com.Admin.PlaceLocalAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceLocalAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceLocalAddOk.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>MtAdd</servlet-name>
+		<servlet-class>com.Admin.MtAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MtAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/MtAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MtAddOk</servlet-name>
+		<servlet-class>com.Admin.MtAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MtAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/MtAddOk.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PlaceMtAdd</servlet-name>
+		<servlet-class>com.Admin.PlaceMtAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceMtAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceMtAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceMtAddOk</servlet-name>
+		<servlet-class>com.Admin.PlaceMtAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceMtAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceMtAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FishAdd</servlet-name>
+		<servlet-class>com.Admin.FishAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FishAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/FishAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FishAddOk</servlet-name>
+		<servlet-class>com.Admin.FishAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FishAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/FishAddOk.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PlaceFishAdd</servlet-name>
+		<servlet-class>com.Admin.PlaceFishAdd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceFishAdd</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceFishAdd.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PlaceFishAddOk</servlet-name>
+		<servlet-class>com.Admin.PlaceFishAddOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlaceFishAddOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/PlaceFishAddOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>com.Admin.Admin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/Admin.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminOk</servlet-name>
+		<servlet-class>com.Admin.AdminOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/AdminOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Survey</servlet-name>
+		<servlet-class>com.Admin.Survey</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Survey</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/Survey.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SurveyOk</servlet-name>
+		<servlet-class>com.Admin.SurveyOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SurveyOk</servlet-name>
+		<!-- http://도메인/프로젝트명/Test.do -->
+		<url-pattern>/Trip/SurveyOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>List</servlet-name>
+		<servlet-class>com.board.List</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>List</servlet-name>
+		<url-pattern>/Trip/List.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>View</servlet-name>
+		<servlet-class>com.board.View</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>View</servlet-name>
+		<url-pattern>/Trip/View.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Edit</servlet-name>
+		<servlet-class>com.board.Edit</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Edit</servlet-name>
+		<url-pattern>/Trip/Edit.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditOk</servlet-name>
+		<servlet-class>com.board.EditOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditOk</servlet-name>
+		<url-pattern>/Trip/EditOk.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Del</servlet-name>
+		<servlet-class>com.board.Del</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Del</servlet-name>
+		<url-pattern>/Trip/Del.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelOk</servlet-name>
+		<servlet-class>com.board.DelOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DelOk</servlet-name>
+		<url-pattern>/Trip/DelOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Check</servlet-name>
+		<servlet-class>com.board.Check</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Check</servlet-name>
+		<url-pattern>/Trip/Check.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckOk</servlet-name>
+		<servlet-class>com.board.CheckOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckOk</servlet-name>
+		<url-pattern>/Trip/CheckOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CommentDel</servlet-name>
+		<servlet-class>com.board.CommentDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CommentDel</servlet-name>
+		<url-pattern>/Trip/CommentDel.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CommentOk</servlet-name>
+		<servlet-class>com.board.CommentOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CommentOk</servlet-name>
+		<url-pattern>/Trip/CommentOk.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Write</servlet-name>
+		<servlet-class>com.board.Write</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Write</servlet-name>
+		<url-pattern>/Trip/Write.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WriteOk</servlet-name>
+		<servlet-class>com.board.WriteOk</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WriteOk</servlet-name>
+		<url-pattern>/Trip/WriteOk.do</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+</web-app>
